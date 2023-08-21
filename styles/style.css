@@ -1,5 +1,228 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-width: 100%;
 }
+
+/* General */
+
+.font-weight {
+  font-weight: 400;
+}
+
+.title-content {
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.content {
+  color: #F1B2CE;
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.paragraph-title {
+  color: #000028;
+}
+
+.title__h2 {
+  color: #FF0070;
+}
+
+.card {
+
+}
+
+section {
+
+  padding: 0 20px;
+}
+section:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.background-title {
+  background-color: #FF0070;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.decorated-zone {
+
+}
+
+.header__theme-menu {
+  
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.header__theme-menu-item {
+  width: 70px;
+  padding: 0 13px;
+}
+
+.header__theme-menu-item:focus {
+
+}
+
+.header__theme-menu-button {
+
+}
+
+.header__theme-menu-button_type_light {
+
+}
+
+.header__theme-menu-button_active {
+
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_type_dark {
+
+}
+
+.header__title {
+  margin-top: 28%;
+  color: #DB00FF;
+  font-family: IBM Plex Mono;
+  font-weight: 700;
+  font-size: 157px;
+  font-style: normal;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0px #FF0070;
+}
+
+.header-content {
+  margin: 114px 0 114px auto;
+  width: 491px;
+}
+
+.main {
+  padding: 60px 0;
+}
+
+.assiduity {
+  display: flex;
+  gap: 20px;
+}
+
+.assiduity__title {
+
+}
+.assiduity__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.assiduity__box-item {
+
+}
+
+/* Section concentration */
+
+.concentration {
+
+}
+
+.concentration__box {
+  display: flex;
+  gap: 20px;
+}
+
+/* Section five-rules */
+
+.five-rules {
+
+}
+
+.five-rules__container {
+  display: flex;
+  gap: 20px;
+}
+
+.five-rules__container-title {
+
+}
+
+.five-rules__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.five-rules__box-item {
+
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.gallery__item-1 {
+
+}
+
+.gallery__item-2 {
+
+}
+
+.gallery__item-3 {
+
+}
+
+.gallery__item-4 {
+
+}
+
+.gallery__item-5 {
+
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #DB00FF;
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: 157px;
+  font-style: normal;
+  line-height: 82.5%;
+}
+
