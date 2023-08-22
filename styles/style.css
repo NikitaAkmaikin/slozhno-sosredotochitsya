@@ -56,8 +56,8 @@ section:not(:last-child) {
 }
 
 .link {
-  text-shadow: 3px 2px #FF0070 ;
   text-decoration: none;
+  text-shadow: 3px 2px #FF0070 ;
 }
 
 .link:hover {
@@ -65,8 +65,8 @@ section:not(:last-child) {
 }
 
 .link:focus-visible {
-  outline: 1px solid #FF0070;
   padding: 1px;
+  outline: 1px solid #FF0070;
 }
 
 /* header */
@@ -105,7 +105,8 @@ section:not(:last-child) {
 }
 
 .header__theme-menu-button { 
-  border: none; 
+  border: none;
+  padding: 3px 14px; 
   color: #FF0070;
   font-family: IBM Plex Mono;
   font-weight: 400;
@@ -115,7 +116,6 @@ section:not(:last-child) {
   text-align: center;
   text-transform: lowercase;
   background-color: transparent;
-  padding: 3px 14px;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -163,10 +163,10 @@ section:not(:last-child) {
   min-width: 9px;
   min-height: 9px;
   border-radius: 50%;
-  background-color: #FF0070;
-  filter: drop-shadow(0px 0px 4px #FF0070);
   border-top: 1px solid #FF0070;
   border-right: 1px solid #FF0070;
+  background-color: #FF0070;
+  filter: drop-shadow(0px 0px 4px #FF0070);
 
 }
 
@@ -189,7 +189,7 @@ section:not(:last-child) {
 
 .header-content {
   width: 491px;
-  margin: 115px 0 115px auto;
+  margin: 114px 0 113px auto;
 }
 
 .main {
@@ -262,42 +262,7 @@ section:not(:last-child) {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 24% 29% 40%;
   gap: 20px;
-  height: calc(100vw / 0.93);
   padding-top: 20px;
-}
-.gallery__item-1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  max-height: 260px;
-}
-
-.gallery__item-2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.gallery__item-3 {
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.gallery__item-4 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.gallery__item-5 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  width: 100%;
-  height: 100%;
-  padding-top: 5px;
 }
 
 /* Footer */
@@ -332,34 +297,137 @@ section:not(:last-child) {
   }
 
   .header__theme-menu-list{
-    flex-direction: column;
-   
+    flex-direction: column;   
   }
+
   .header__theme-menu {
     margin-top: 24%;
   }
+
   .header__theme-menu-item {
-    align-self: end
+    align-self: end;
   }
+
   .header__title {
-    font-size: 120px;
     margin-top: 24%;
+    font-size: 120px;
   }
+
   .header-content {
     width: 50%;
     margin: 163px 0 163px auto;
   }
+
   .gallery__box {
   grid-template-rows: 24% 28% 40%;
   }
+
   .footer_content {   
     margin: 57% 0;
     font-size: 120px;
-  }
+  }  
 }
 
 /* @Media Смартфоны */
+@media (min-width: 579px) {
 
-@media (max-width: 375px) {
+  .gallery__box img{
+    min-height: 100%;
+  }
+
+  .gallery__item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-height: 260px;
+  }
   
+  .gallery__item-2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  .gallery__item-3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  
+  .gallery__item-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .gallery__item-5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+  }
+  .gallery__box {
+    height: calc(100vw / 0.93);
+  }
+}
+
+@media (max-width: 579px) {
+  .header {
+    padding: 10px;
+  }
+  
+  .header-content {
+    width: 100%;
+    margin: 55px 0;
+  }
+
+  .assiduity {
+    display: block;
+  }
+
+  .header__theme-menu {
+    margin-top: 19%;
+  }
+  
+  .header__title {
+    margin-top: 19%;
+    margin-left: 0px;
+    font-size: 117px;
+  }
+
+  section {
+    padding: 0 10px;
+  }
+
+  .concentration-title {
+    width: 100%;
+  }
+
+  .five-rules {
+    display: block;
+  }
+
+  .main {
+    padding: 40px 0;
+  }
+
+  section:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.gallery__box {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.footer_content {
+  margin: 80% 0;
+  font-size: 116px;
+}
 }
