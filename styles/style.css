@@ -2,6 +2,7 @@
 
 .page {
   min-width: 100%;
+  background: #000028;
 }
 
 /* General */
@@ -32,9 +33,9 @@
 }
 
 .title__h2 {
-  color: #FF0070;
   min-width: 32%;
   margin-bottom: 20px;
+  color: #FF0070;
 }
 
 .card p {
@@ -45,6 +46,7 @@ section {
 
   padding: 0 20px;
 }
+
 section:not(:last-child) {
   margin-bottom: 80px;
 }
@@ -52,6 +54,22 @@ section:not(:last-child) {
 .background-title {
   background-color: #FF0070;
 }
+
+.link {
+  text-shadow: 3px 2px #FF0070 ;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus-visible {
+  outline: 1px solid #FF0070;
+  padding: 1px;
+}
+
+/* header */
 
 .header {
   width: 100%;
@@ -74,28 +92,46 @@ section:not(:last-child) {
   display: flex;
   justify-content: center;
   gap: 10px;
-
+  text-align: center;
 }
 
 .header__theme-menu-item {
+  position: relative;
   width: 70px;
-  padding: 0 13px;
 }
 
 .header__theme-menu-item:focus {
+  border: 1px solid #FF0070;
+}
+
+.header__theme-menu-button { 
+  border: none; 
+  color: #FF0070;
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: transparent;
+  padding: 3px 14px;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: #353430;
 
 }
 
-.header__theme-menu-button {
-
-}
 
 .header__theme-menu-button_type_light {
 
 }
 
 .header__theme-menu-button_active {
-
+  
+  border: 1px solid #FF0070;
+  pointer-events: none;
 }
 
 .header__theme-menu-button_type_auto {
@@ -106,9 +142,42 @@ section:not(:last-child) {
 
 }
 
+.decor {
+  position: absolute;
+  top: 3.8%;
+  right: 4.7%;
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase; 
+}
+
+.decor::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 43px;
+  min-width: 9px;
+  min-height: 9px;
+  border-radius: 50%;
+  background-color: #FF0070;
+  filter: drop-shadow(0px 0px 4px #FF0070);
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+
+}
+
+/* .corner {
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+} */
+
 .header__title {
-  margin-left: -20px;
   margin-top: 28%;
+  margin-left: -20px;
   color: #DB00FF;
   font-family: 'IBM Plex Mono';
   font-weight: 700;
@@ -242,12 +311,55 @@ section:not(:last-child) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 27% 0;
   color: #DB00FF;
   font-family: 'IBM Plex Mono';
   font-weight: 700;
   font-size: 157px;
   font-style: normal;
   line-height: 82.5%;
-  margin: 27% 0;
 }
 
+/* @Media Планшеты */
+
+@media (max-width: 768px) {
+  .concentration__box {
+    flex-direction: column;
+  }
+  
+  .concentration__box-li {
+    width: 100%;
+  }
+
+  .header__theme-menu-list{
+    flex-direction: column;
+   
+  }
+  .header__theme-menu {
+    margin-top: 24%;
+  }
+  .header__theme-menu-item {
+    align-self: end
+  }
+  .header__title {
+    font-size: 120px;
+    margin-top: 24%;
+  }
+  .header-content {
+    width: 50%;
+    margin: 163px 0 163px auto;
+  }
+  .gallery__box {
+  grid-template-rows: 24% 28% 40%;
+  }
+  .footer_content {   
+    margin: 57% 0;
+    font-size: 120px;
+  }
+}
+
+/* @Media Смартфоны */
+
+@media (max-width: 375px) {
+  
+}
