@@ -80,14 +80,6 @@ section:not(:last-child) {
   background-size: cover;
 }
 
-.decorated-zone {
-
-}
-
-.header__theme-menu {
-  
-}
-
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
@@ -120,26 +112,11 @@ section:not(:last-child) {
 
 .header__theme-menu-button:focus-visible {
   border-bottom: #353430;
-
 }
 
-
-.header__theme-menu-button_type_light {
-
-}
-
-.header__theme-menu-button_active {
-  
+.header__theme-menu-button_active {  
   border: 1px solid #FF0070;
   pointer-events: none;
-}
-
-.header__theme-menu-button_type_auto {
-
-}
-
-.header__theme-menu-button_type_dark {
-
 }
 
 .decor {
@@ -167,13 +144,7 @@ section:not(:last-child) {
   border-right: 1px solid #FF0070;
   background-color: #FF0070;
   filter: drop-shadow(0px 0px 4px #FF0070);
-
 }
-
-/* .corner {
-  border-top: 1px solid #FF0070;
-  border-right: 1px solid #FF0070;
-} */
 
 .header__title {
   margin-top: 28%;
@@ -204,14 +175,11 @@ section:not(:last-child) {
 .assiduity__title {
   min-width: 32%;
 }
+
 .assiduity__box {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.assiduity__box-item {
-
 }
 
 /* Section concentration */
@@ -235,10 +203,6 @@ section:not(:last-child) {
   gap: 20px;
 }
 
-.five-rules__container {
-  
-}
-
 .five-rules__container-title {
   margin-bottom: 20px;
 }
@@ -247,10 +211,6 @@ section:not(:last-child) {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.five-rules__box-item {
-
 }
 
 .gallery {
@@ -268,6 +228,7 @@ section:not(:last-child) {
 /* Footer */
 
 .footer {
+  width: 100%;
   padding: 20px;
 }
 
@@ -369,6 +330,7 @@ section:not(:last-child) {
     height: 100%;
     padding-top: 5px;
   }
+
   .gallery__box {
     height: calc(100vw / 0.93);
   }
@@ -416,18 +378,18 @@ section:not(:last-child) {
 
   section:not(:last-child) {
     margin-bottom: 50px;
-}
+  }
 
-.gallery__box {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 10px;
-  padding-top: 10px;
-}
+  .gallery__box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    padding-top: 10px;
+  }
 
-.footer_content {
-  margin: 80% 0;
-  font-size: 116px;
-}
+  .footer_content {
+    margin: 80% 0;
+    font-size: 116px;
+  }
 }
