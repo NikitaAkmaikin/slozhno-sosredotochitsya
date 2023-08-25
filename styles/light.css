@@ -6,20 +6,21 @@
 */
 :root {
   --background-page: #FFF1F7;
-  --background-color: #F1B2CE;
+  --background-color: #ff8dcb;
   --color-title:#FFC2E6;
   --color-title-section: #353430;
   --color-title-paragraf: #000028;
-  --color-text: #F1B2CE;
-  --link-shadow: #F1B2CE;
+  --color-text: #353430;
+  --link-shadow: #353430;
   --font-family: 'IBM Plex Mono';
   --focus:#FF0070;
 }
 
-  .page.theme_light {
-  
+  .page.theme_light .decor {
+    display: none;
 }
   
 .page.theme_light .header {
   background-image: url(../images/cover-image-light.png);
 }
+

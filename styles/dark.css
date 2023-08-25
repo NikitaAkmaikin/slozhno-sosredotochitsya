@@ -5,10 +5,6 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --background-page: #000028;
   --background-color: #FF0070;
   --color-title:#DB00FF;
@@ -19,9 +15,7 @@
   --font-family: 'IBM Plex Mono';
   --focus:#FF0070;
 }
-/* --background-page: #00183F;
---background-color-dark: #FF0070;
---color-title:#DB00FF;
---color-title-paragraf: #000028;
---color-text: #F1B2CE;
---font-family: 'IBM Plex Mono'; */
+
+.page.page.theme_dark .header {
+  background-image: url(../images/cover-image-dark.png);
+}
