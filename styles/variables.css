@@ -3,5 +3,13 @@
   и их переопределение под различные устройства
 */
 :root {
-  --backgroundPage: #00183F;
+  --background-page: #000028;
+  --background-color: #FF0070;
+  --color-title:#DB00FF;
+  --color-title-section: #FF0070;
+  --color-title-paragraf: #000028;
+  --color-text: #F1B2CE;
+  --link-shadow: #FF0070;
+  --font-family: 'IBM Plex Mono';
+  --focus:#FF0070;
 }
