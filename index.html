@@ -9,14 +9,14 @@
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
   </head>
-  <body class="page">
+  <body class="page">    
     <header class="header decorated-zone">
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -43,8 +43,8 @@
             </button>
           </li>
         </ul>
-      </nav>
-      <div class="decor corner">rec</div>
+        <span class="decor" aria-hidden="true">rec</span>
+      </nav>      
       <h1 class="header__title">no focus</h1>
       <p class="header-content title-content background-title paragraph-title">
         Что делать, когда не можешь делать ничего <br />Или почему нам так
@@ -52,7 +52,7 @@
       </p>
     </header>
     <main class="main">
-      <section class="assiduity">
+      <section class="assiduity indent-sections">
         <h2 class="assiduity__title title__h2 title-content">
           Почему сосредоточиться так сложно
         </h2>
@@ -95,7 +95,7 @@
           </li>
         </ul>
       </section>
-      <section class="concentration">
+      <section class="concentration indent-sections">
         <h2 class="concentration-title title-content title__h2">
           Что снижает концентрацию внимания?
         </h2>
@@ -125,9 +125,9 @@
             </p>
           </li>
           <li class="card concentration__box-li">
-            <h2 class="title-content paragraph-title background-title">
+            <h3 class="title-content paragraph-title background-title">
               Гаджеты
-            </h2>
+            </h3>
             <p class="content">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -140,24 +140,24 @@
           </li>
         </ul>
       </section>
-      <section class="five-rules">
+      <section class="rules-concentration indent-sections">
         <h2 class="title-content title__h2">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="five-rules__container">
-          <p
-            class="five-rules__container-title title-content paragraph-title background-title"
+        <div class="rules-concentration__container">
+          <h3
+            class="rules-concentration__container-title title-content paragraph-title background-title"
           >
             5 простых (на самом деле не очень) советов
-          </p>
-          <ul class="five-rules__box">
-            <li class="card five-rules__box-item">
-              <h3
-                class="title-content paragraph-title background-title font-weight"
+          </h3>
+          <ul class="rules-concentration__box">
+            <li class="card rules-concentration__box-item">
+              <h4
+                class="title-content paragraph-title background-title"
               >
                 Представьте небо и облака
-              </h3>
+              </h4>
               <p class="content">
                 Или листья в ручье. Тут дело в лёгкой медитации, которая
                 помогает успокоиться. Ведь часто именно тревожные мысли о
@@ -170,11 +170,11 @@
               </p>
             </li>
             <li class="card">
-              <h3
-                class="title-content paragraph-title background-title font-weight"
+              <h4
+                class="title-content paragraph-title background-title"
               >
                 Включите музыку
-              </h3>
+              </h4>
               <p class="content">
                 Но не любую, и не любимую. Любимая может быть связана с сильными
                 положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -183,11 +183,11 @@
               </p>
             </li>
             <li class="card">
-              <h2
-                class="title-content paragraph-title background-title font-weight"
+              <h4
+                class="title-content paragraph-title background-title"
               >
                 Прогуляйтесь
-              </h2>
+              </h4>
               <p class="content">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
                 <a href="#!" target="_blank" class="link">показал</a>, что созерцание природы
@@ -199,11 +199,11 @@
               </p>
             </li>
             <li class="card">
-              <h3
-                class="title-content paragraph-title background-title font-weight"
+              <h4
+                class="title-content paragraph-title background-title"
               >
                 Хорошо ешьте
-              </h3>
+              </h4>
               <p class="content">
                 Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                 которые препятствуют резким скачкам сахара в крови. Например, с
@@ -213,11 +213,11 @@
               </p>
             </li>
             <li class="card">
-              <h3
-                class="title-content paragraph-title background-title font-weight"
+              <h4
+                class="title-content paragraph-title background-title"
               >
                 Читайте
-              </h3>
+              </h4>
               <p class="content">
                 Настоящие бумажные книги. Это правда помогает с концентрацией:
                 чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -228,37 +228,37 @@
           </ul>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery indent-sections">
         <h2 class="title-content paragraph-title background-title">
           А можно в картинках?
         </h2>
         <div class="gallery__box">
           <img
-            class="gallery__item-1"
+            class="gallery__sunset"
             loading="lazy"
             src="./images/sunset.png"
             alt="Пейзаж открывающий вид на солнце, находящиеся между двух гор"
           />
           <img
-            class="gallery__item-2"
+            class="gallery__ice-cream"
             loading="lazy"
             src="./images/ice-cream.png"
             alt="Мультяшный тазик с четырьмя шариками морошенного, у которых сверху сладкая посыпка"
           />
           <img
-            class="gallery__item-3"
+            class="gallery__tape"
             loading="lazy"
             src="./images/tape.png"
             alt="Книги выстроенный в вертикальную горку, сверку которых чашка с чаем"
           />
           <img
-            class="gallery__item-4"
+            class="gallery__books"
             loading="lazy"
             src="./images/books.png"
             alt="Касета рассположенная по центру"
           />
           <img
-            class="gallery__item-5"
+            class="gallery__street"
             loading="lazy"
             src="./images/street.png"
             alt=" Фиолетовая улица с интересного угла обзора"
@@ -267,7 +267,7 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="footer_content">focus</p>
+      <h2 class="footer_content">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
