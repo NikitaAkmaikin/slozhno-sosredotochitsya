@@ -1,12 +1,16 @@
 .page {
   max-width: 1440px;
   background-color: var(--background-page, #000028);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* General */
 
 .title-content {
-  font-family: var(--font-family, 'Arial', 'Helvetica', sans-serif);
+  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -15,27 +19,23 @@
 
 .content {
   color: var(--color-text, #f1b2ce);
-  font-family: var(--font-family, 'Arial', 'Helvetica', sans-serif);
+  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
 }
-/* 
-.font-weight {
-  font-weight: 400;
-} */
 
-.paragraph-title {
-  color: var(--color-title-paragraf, #000028);
+.paragraph {
+  color: var(----color-text-with-background, #000028);
 }
-/* ======================================= */
-.title__h2 {
+
+.text-section {
   min-width: 32%;
   margin-block-end: 20px;
   color: var(--color-title-section, #ff0070);
 }
-/* ======================================= */
+
 .card p {
   margin-block-start: 10px;
 }
@@ -48,13 +48,13 @@
   margin-block-end: 80px;
 }
 
-.background-title {
-  background-color: var(--background-color, #ff0070);
+.background-text {
+  background-color: var(--background-for-text, #ff0070);
 }
 
 .link {
   text-decoration: none;
-  text-shadow: 3px 2px var(--background-color, #ff0070);
+  text-shadow: 3px 2px var(--link-shadow, #ff0070);
 }
 
 .link:hover {
@@ -80,10 +80,6 @@
   justify-content: space-between;
   align-items: start;
   padding: 20px;
-  background-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   min-block-size: 100vh;
 }
 
@@ -97,33 +93,6 @@
   border-block-start: 1px solid var(--color-title-section, #FF0070);
 }
 
-.decor-text::before {
-  content: "REc";
-  position: absolute;
-  top: 3px;
-  right: 28px;
-  color: var(--color-title-section);
-  font-family: var(--font-family, 'Arial', 'Helvetica', sans-serif);
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.decor-text::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  right: 8px;
-  min-width: 9px;
-  min-height: 9px;
-  border-radius: 50%;
-  background-color: var(--background-color, #ff0070);
-  /* text-shadow: 2px solid #FF0070; */
-}
-
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
@@ -135,15 +104,12 @@
 .header__theme-menu-item:focus {
   outline: none;
 }
-/* .header__theme-menu-item:focus {
-  border-block-end: #353430;
-} */
 
 .header__theme-menu-button {
   border: none;
   padding: 3px 14px;
-  color: var(--link-shadow, #ff0070);
-  font-family: var(--font-family, 'Arial', 'Helvetica', sans-serif);
+  color: var(--color-title-section, #ff0070);
+  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -155,25 +121,24 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: #353430;
-  
+  border-block-end: var(--color-title-section, #ff0070);  
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--link-shadow, #ff0070);
+  border: 1px solid var(--color-title-section, #ff0070);
   pointer-events: none;
 }
 
 .header__title {
   align-self: center;
   margin-left: -2%;
-  color: var(--color-title, #db00ff);
-  font-family: var(--font-family, 'Arial', 'Helvetica', sans-serif);
+  color: var(--color-title-header-footer, #db00ff);
+  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--link-shadow, #ff0070);
+  text-shadow: 4px 4px 0px #ff0070;
 }
 
 .header-content {
@@ -257,12 +222,13 @@
 }
 
 .footer_content {
-  color: var(--color-title, #db00ff);
-  font-family: var(--font-family, 'Arial', 'Helvetica', sans-serif);
+  color: var(--color-title-header-footer, #db00ff);
+  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
   font-weight: 700;
   font-size: 157px;
   font-style: normal;
   line-height: 82.5%;
+  text-shadow: 4px 4px 0px #ff0070;
 }
 
 .decor-bottom {

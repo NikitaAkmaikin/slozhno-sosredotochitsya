@@ -1,23 +1,11 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
-  --background-page: #000028;
-  --background-color: #FF0070;
-  --color-title:#DB00FF;
+  --background-page: #000028; /* Данный цвет присутствует! */
+  --color-title-header-footer: #DB00FF;
+  --color-text-with-background: #000028;
+  --background-for-text: #FF0070;
   --color-title-section: #FF0070;
-  --color-title-paragraf: #000028;
   --color-text: #F1B2CE;
   --link-shadow: #FF0070;
   --font-family: 'IBM Plex Mono';
-  --focus:#FF0070;
+  /* --focus:#FF0070; */
 }
-
-/* --text-with-background: ;
-  
-
-
-
-
-*/

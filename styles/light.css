@@ -1,26 +1,18 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-  
-*/
 :root {
   --background-page: #FFF1F7;
-  --background-color: #ff8dcb;
-  --color-title:#FFC2E6;
+  --color-title-header-footer: #FFC2E6;
+  --color-text-with-background: #353430;
+  --background-for-text: #ff8dcb;
   --color-title-section: #353430;
-  --color-title-paragraf: #000028;
   --color-text: #353430;
-  --link-shadow: #353430;
-  --font-family: 'IBM Plex Mono';
-  --focus:#FF0070;
-}
-
-  .page.theme_light .decor {
-    display: none;
+  --link-shadow: #ff8dcb;
 }
   
-.page.theme_light .header {
+.page.theme_light {
   background-image: url(../images/cover-image-light.png);
 }
 
+.page.theme_light .decor::before,
+.page.theme_light .decor::after {
+  display: none;
+}
