@@ -123,7 +123,8 @@
   outline: none;
 }
 
-.header__theme-menu-button:focus-visible::after {
+.header__theme-menu-button:focus-visible {
+  outline: none;
   border-block-end: 1px solid var(--color-title-section, #ff0070);
 }
 

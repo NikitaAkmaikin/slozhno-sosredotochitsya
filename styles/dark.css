@@ -37,5 +37,7 @@
   min-height: 9px;
   border-radius: 50%;
   background-color: var(--color-title-section, #ff0070);
+  fill: #FF0070;
+  filter: drop-shadow(0px 0px 4px #FF0070);
   /* text-shadow: 2px solid #FF0070; */
 }
