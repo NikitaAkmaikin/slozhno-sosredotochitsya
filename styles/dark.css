@@ -12,7 +12,7 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-.page.page.theme_dark .decor::before{
+.page.page.theme_dark .decor::before {
    
   content: "REc";
   position: absolute;
