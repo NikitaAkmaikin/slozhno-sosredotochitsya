@@ -1,43 +1,18 @@
 .page.theme_dark {
-  --background-page: #000028; /* Данный цвет присутствует! */
+  --background-page: #00183F;
   --color-title-header-footer: #DB00FF;
-  --color-text-with-background: #000028;
+  --shadow-title-header-footer: #FF0070;
+  --color-text-with-background: #00183F;
   --background-for-text: #FF0070;
   --color-title-section: #FF0070;
   --color-text: #F1B2CE;
   --link-shadow: #FF0070;
-}
-
-.page.page.theme_dark {
+  --hover-button: rgba(255, 0, 112, 0.40);
   background-image: url(../images/cover-image-dark.png);
 }
 
-.page.page.theme_dark .decor::before {
-   
-  content: "REc";
-  position: absolute;
-  top: 3px;
-  right: 28px;
-  color: var(--color-title-section, #ff0070);
-  font-family: var(--font-family, 'Arial', 'Helvetica', 'monospace', sans-serif);
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.page.page.theme_dark .decor::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  right: 8px;
-  min-width: 9px;
-  min-height: 9px;
-  border-radius: 50%;
-  background-color: var(--color-title-section, #ff0070);
-  fill: #FF0070;
-  filter: drop-shadow(0px 0px 4px #FF0070);
-  /* text-shadow: 2px solid #FF0070; */
+@media (prefers-color-scheme: dark) {
+  .page {
+    background-image: url(../images/cover-image-dark.png);
+  }
 }

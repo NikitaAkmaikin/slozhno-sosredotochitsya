@@ -1,18 +1,39 @@
-:root {
+.page.theme_light {
   --background-page: #FFF1F7;
   --color-title-header-footer: #FFC2E6;
+  --shadow-title-header-footer: #FF0070;
   --color-text-with-background: #353430;
   --background-for-text: #ff8dcb;
   --color-title-section: #353430;
   --color-text: #353430;
   --link-shadow: #ff8dcb;
-}
-  
-.page.theme_light {
+  --hover-button: rgba(50, 49, 45, 0.40);
   background-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .decor::before,
 .page.theme_light .decor::after {
   display: none;
-} 
+}
+
+.page.page.theme_light .decor {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-page: #FFF1F7;
+    --color-title-header-footer: #FFC2E6;
+    --shadow-title-header-footer: #FF0070;
+    --color-text-with-background: #353430;
+    --background-for-text: #ff8dcb;
+    --color-title-section: #353430;
+    --color-text: #353430;
+    --link-shadow: #ff8dcb;
+    --hover-button: rgba(50, 49, 45, 0.40);
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+}
