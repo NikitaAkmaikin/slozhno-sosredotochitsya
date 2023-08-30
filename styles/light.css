@@ -32,7 +32,8 @@
     background-image: url(../images/cover-image-light.png);
   }
 
-  .decor {
+  .page.theme_light .decor,
+  .page.theme_auto .decor {
     display: none;
   }
 }
